@@ -8,10 +8,8 @@ SEARCH-BAR
 }
 
 .search-bar{
-    color: rgb(102, 100, 100);
     background-color: rgb(235, 230, 230);
     padding: 6px 4px;
-    font-size: 14px;
     height: 42px;
 }
 
@@ -20,9 +18,18 @@ SEARCH-BAR
 }
 
 .bell-icon{
-    color: rgb(228, 178, 0);
+    color: rgb(201, 144, 0);
 }
 
 ul, ol, li {
     margin-bottom: 0;
+}
+
+.search-bar span{
+    font-size: 14px;
+    color: rgb(82, 82, 82);
+}
+
+.logo-small{
+    height: 46px;
 }
