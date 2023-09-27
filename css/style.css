@@ -1,0 +1,28 @@
+
+/* 
+SEARCH-BAR 
+*/
+
+.toolbar{
+  height: 70px;  
+}
+
+.search-bar{
+    color: rgb(102, 100, 100);
+    background-color: rgb(235, 230, 230);
+    padding: 6px 4px;
+    font-size: 14px;
+    height: 42px;
+}
+
+.toolbar a{
+    color: black;
+}
+
+.bell-icon{
+    color: rgb(228, 178, 0);
+}
+
+ul, ol, li {
+    margin-bottom: 0;
+}
