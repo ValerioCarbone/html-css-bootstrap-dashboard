@@ -87,3 +87,9 @@ MEDIA QUERY
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1399.98px) {}
+
+
+.col .debug{
+    padding: 10px;
+    border: 2px solid yellow;
+}
