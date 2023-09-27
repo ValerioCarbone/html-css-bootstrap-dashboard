@@ -11,13 +11,13 @@
 </head>
 <body>
     <main>
-        <div class="container-fluid">
-            <div class="row flex-column">
+        <div class="container-full">
+            <div class="d-flex flex-column">
                 
                 <!-- TOOLBAR -->
                 
-                <aside class="col toolbar py-3">
-                    <div class="container">
+                <aside class="col-12 toolbar py-3">
+                    <div class="container-fluid">
                         <div class="row align-items-center flex-nowrap">
                             <div class="col-auto">
                                 <img class="img-fluid logo-small d-lg-none" src="./img/mobile-logo.png" alt="">
@@ -51,12 +51,33 @@
                         </div>
                     </div>
                 </aside>
-                <div class="col">
-                    <nav>
+                <div class="col-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <nav class="col navbar d-flex flex-column align-items-center">
+                                <ul class="navbar-menu ">
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-house navbar-icon"></i>
+                                        <span class="navbar-icon-name">Home</span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-chart-simple navbar-icon"></i>
+                                        <span class="navbar-icon-name">Stats</span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fa-solid fa-signal navbar-icon"></i>
+                                        <span class="navbar-icon-name">Signals</span>
+                                    </li>
+                                </ul>
+                                <div class="navbar-settings">
+                                    <i class="fa-solid fa-gear navbar-icon"></i>
+                                    <span class="navbar-icon-name">Admin</span>
+                                </div>
+                            </nav>
+                            <div class="col">
 
-                    </nav>
-                    <div>
-
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
