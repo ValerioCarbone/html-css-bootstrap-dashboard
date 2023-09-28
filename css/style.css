@@ -22,6 +22,7 @@ PALETTE
 
 :root{
     --dark-blue: #165BBA;
+    --ms-grey: #6c6e71;
 }
 
 /*
@@ -36,8 +37,13 @@ UTILITY
     font-size: 10px;
 }
 
-.white-space-nowrap{
-    white-space: nowrap;
+.ms-text-bg-warning{
+    color: white;
+    background-color: #FFC107;
+}
+
+.ms-auto{
+    margin: 0 auto;
 }
 
 /* 
@@ -93,7 +99,7 @@ NAVBAR
 width: 68px;
 background-image: url(../img/sidebar-bg.png);
 background-color: #051E34;
-background-size: contain;
+background-size: cover;
 color: white;
 height: calc(100vh - 70px);
 }
@@ -125,6 +131,18 @@ MAIN-APP
     color: white;
     background-color: var(--dark-blue);
 }
+
+.card-table-avatar{
+    width: 30px;
+}
+
+:is(table) th,
+:is(table) td{
+    font-weight: 600;
+}
+
+
+
 
 
 
