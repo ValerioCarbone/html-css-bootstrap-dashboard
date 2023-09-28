@@ -51,31 +51,118 @@
                         </div>
                     </div>
                 </aside>
-                <div class="col">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <nav class="col-auto navbar d-flex flex-column align-items-center">
-                                <ul class="navbar-menu ">
-                                    <li class="d-flex align-items-center">
-                                        <i class="fa-solid fa-house navbar-icon"></i>
-                                        <span class="navbar-icon-name">Home</span>
+                <div class="col-12">
+                    <div class="container-ms">
+                        <div class="d-flex">
+                            
+                            <!-- NAVBAR -->
+
+                            <nav class="navbar d-flex flex-column justify-content-center">
+                                <ul class="navbar-menu d-flex flex-column gap-2">
+                                    <li>
+                                        <a class="d-flex align-items-center column-gap-2" href="#">
+                                            <i class="fa-solid fa-house navbar-icon"></i>
+                                            <span class="navbar-icon-name d-none d-lg-block">Home</span>
+                                        </a>
                                     </li>
-                                    <li class="d-flex align-items-center">
-                                        <i class="fa-solid fa-chart-simple navbar-icon"></i>
-                                        <span class="navbar-icon-name">Stats</span>
+                                    <li>
+                                        <a class="d-flex align-items-center column-gap-2" href="#">
+                                            <i class="fa-solid fa-chart-simple navbar-icon"></i>
+                                            <span class="navbar-icon-name d-none d-lg-block">Stats</span>
+                                        </a>
                                     </li>
-                                    <li class="d-flex align-items-center">
-                                        <i class="fa-solid fa-signal navbar-icon"></i>
-                                        <span class="navbar-icon-name">Signals</span>
+                                    <li>
+                                        <a class="d-flex align-items-center column-gap-2" href="#">
+                                            <i class="fa-solid fa-signal navbar-icon"></i>
+                                            <span class="navbar-icon-name d-none d-lg-block">Signals</span>
+                                        </a>
                                     </li>
                                 </ul>
                                 <div class="navbar-settings">
-                                    <i class="fa-solid fa-gear navbar-icon"></i>
-                                    <span class="navbar-icon-name">Admin</span>
+                                    <a class="d-flex align-items-center column-gap-2" href="#">
+                                        <i class="fa-solid fa-gear navbar-icon"></i>
+                                        <span class="navbar-icon-name d-none d-lg-block">Admin</span>
+                                    </a>
                                 </div>
                             </nav>
-                            <div class="col debug">
+                            
+                            <!-- MAIN-APP -->
+                            
+                            <div class="flex-grow-1">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        
+                                        <!-- MAIN-APP-HEADER -->
+                                        
+                                        <div class="col-12 main-app-header text-light">
+                                            <div class="container-fluid">
+                                                <div class="d-flex row-gap-3 py-3 flex-wrap justify-content-start">
+                                                    <div class="col-12 col-md-4 col-lg-3 order-0 order-md-3">
+                                                        <div class="d-flex justify-content-center">
+                                                            Nuovo Studente <a type="button" class="btn btn-outline-light mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </a>
+                                                        </div>
 
+                                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                                            <div class="offcanvas-header">
+                                                              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="offcanvas-body">
+                                                              ...
+                                                            </div>
+                                                          </div>
+
+                                                    </div>
+                                                    <div class="col-12 col-md-4 col-lg-6 d-flex flex-column order-1">
+                                                        <div>
+                                                            <span class="fs-2 fw-bold me-2">
+                                                                Boolean
+                                                            </span>
+                                                            <span class="badge rounded-pill dark-blue-pill">
+                                                                Piano Blaze
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="badge rounded-pill dark-blue-pill">
+                                                                3 app
+                                                            </span>
+                                                            <span class="mx-1">
+                                                                <i class="fa-solid fa-angles-right ms-fs-14"></i>
+                                                            </span>
+                                                            <span class="badge rounded-pill dark-blue-pill d-lg-none">
+                                                                <i class="fa-solid fa-plus ms-fs-10 "></i>
+                                                            </span>
+                                                            <span class="badge rounded-pill dark-blue-pill d-none d-lg-inline-block">
+                                                                Boolean web app
+                                                            </span>
+                                                            <span class="badge rounded-pill dark-blue-pill d-none d-lg-inline-block">
+                                                                Boolean mobile app
+                                                            </span>
+                                                            <span class="badge rounded-pill dark-blue-pill d-none d-lg-inline-block">
+                                                                Boolean blog app
+                                                            </span>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-12 col-md-4 col-lg-3 order-2">
+                                                        <div class="d-flex flex-column">
+                                                            <div>
+                                                                Studenti online negli ultimi 30 minuti
+                                                            </div>
+                                                            <div class="fs-2 fw-bold">
+                                                                125
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 debug"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

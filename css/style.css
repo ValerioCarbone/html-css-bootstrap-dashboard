@@ -1,3 +1,44 @@
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+ul, ol, li{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-ms{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*
+PALETTE 
+ */
+
+:root{
+    --dark-blue: #165BBA;
+}
+
+/*
+UTILITY 
+*/
+
+.ms-fs-14{
+    font-size: 14px;
+}
+
+.ms-fs-10{
+    font-size: 10px;
+}
+
+.white-space-nowrap{
+    white-space: nowrap;
+}
 
 /* 
 SEARCH-BAR 
@@ -6,6 +47,7 @@ SEARCH-BAR
 .container-full{
     width: 100%;
     height: 100vh;
+    overflow:hidden ;
 }
 
 .toolbar{
@@ -16,6 +58,7 @@ SEARCH-BAR
     background-color: rgb(235, 230, 230);
     padding: 6px 4px;
     height: 42px;
+    white-space: nowrap;
 }
 
 .toolbar a{
@@ -27,7 +70,7 @@ SEARCH-BAR
 }
 
 ul, ol, li {
-    margin-bottom: 0;
+   
     list-style: none;
     text-decoration: none;
 }
@@ -52,6 +95,7 @@ background-image: url(../img/sidebar-bg.png);
 background-color: #051E34;
 background-size: contain;
 color: white;
+height: calc(100vh - 70px);
 }
 
 .navbar-settings{
@@ -61,6 +105,27 @@ color: white;
 .navbar-menu{
     margin-bottom: auto;
 }
+
+.col-12 .debug{
+    padding: 10px;
+    border: 2px solid greenyellow;
+}
+
+/*
+MAIN-APP 
+*/
+
+.main-app-header{
+    background-color: #1B72E8;
+}
+
+
+
+.dark-blue-pill{
+    color: white;
+    background-color: var(--dark-blue);
+}
+
 
 
 
@@ -80,6 +145,8 @@ MEDIA QUERY
     .navbar{
         width: 150px;
     }
+
+
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
