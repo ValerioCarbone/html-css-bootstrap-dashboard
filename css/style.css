@@ -130,9 +130,9 @@ height: calc(100vh - 70px);
     background-color: #9cabc0;
 }
 
-/*
-MAIN-APP 
-*/
+
+
+
 
 
 /* HEADER */
@@ -146,6 +146,20 @@ MAIN-APP
     color: white;
     background-color: var(--dark-blue);
 }
+
+#offcanvasRight{
+    width: 100%;
+}
+
+.offcanvas-header{  
+    padding-left: 0;
+}
+
+
+/*
+MAIN-APP 
+*/
+
 
 .card-table-avatar{
     width: 30px;
@@ -201,6 +215,8 @@ MEDIA QUERY
     display: table-cell;
 }
 
+    
+
 }
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
@@ -209,7 +225,13 @@ MEDIA QUERY
         width: 150px;
     }
 
+    #offcanvasRight{
+        width: 50%;
+    }
 
+    .offcanvas-header{  
+        padding-left: auto;
+    }
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
@@ -218,3 +240,15 @@ MEDIA QUERY
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1399.98px) {}
 
+
+
+
+
+
+
+
+
+
+
+
+  
