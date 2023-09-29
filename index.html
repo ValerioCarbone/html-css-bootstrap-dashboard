@@ -58,30 +58,38 @@
                
                <!-- NAVBAR -->
                
-                <nav class="flex-shrink-0 navbar d-flex flex-column justify-content-center">
-                    <ul class="navbar-menu d-flex flex-column gap-2">
+                <nav class="flex-shrink-0 navbar">
+                    <ul class="navbar-menu">
                         <li>
-                            <a class="d-flex align-items-center column-gap-2" href="#">
-                                <i class="fa-solid fa-house navbar-icon"></i>
+                            <a class="d-flex column-gap-2" href="#">
+                                <span class="navbar-icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </span>
                                 <span class="navbar-icon-name d-none d-lg-block">Home</span>
                             </a>
                         </li>
                         <li>
-                            <a class="d-flex align-items-center column-gap-2" href="#">
-                                <i class="fa-solid fa-chart-simple navbar-icon"></i>
+                            <a class="d-flex column-gap-2" href="#">
+                                <span class="navbar-icon">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                </span>
                                 <span class="navbar-icon-name d-none d-lg-block">Stats</span>
                             </a>
                         </li>
                         <li>
-                            <a class="d-flex align-items-center column-gap-2" href="#">
-                                <i class="fa-solid fa-signal navbar-icon"></i>
+                            <a class="d-flex column-gap-2" href="#">
+                                <span class="navbar-icon">
+                                    <i class="fa-solid fa-signal"></i>
+                                </span>
                                 <span class="navbar-icon-name d-none d-lg-block">Signals</span>
                             </a>
                         </li>
                     </ul>
                     <div class="navbar-settings">
-                        <a class="d-flex align-items-center column-gap-2" href="#">
-                            <i class="fa-solid fa-gear navbar-icon"></i>
+                        <a class="d-flex column-gap-2" href="#">
+                            <span class="navbar-icon">
+                                <i class="fa-solid fa-gear"></i>
+                            </span>
                             <span class="navbar-icon-name d-none d-lg-block">Admin</span>
                         </a>
                     </div>
@@ -97,7 +105,7 @@
                         <div class="container-fluid">
                             <div class="row row-gap-3 py-3 align-items-center">
                                 <div class="col col-md-4 col-lg-3 order-0 order-md-3">
-                                    <div class="d-flex justify-content-lg-center">
+                                    <div class="d-flex justify-content-lg-center fw-semibold">
                                         Nuovo Studente <a type="button"
                                             class="btn btn-outline-light mx-3"
                                             data-bs-toggle="offcanvas"
@@ -196,7 +204,7 @@
                                 </div>
                                 <div class="col col-md-4 col-lg-6 d-flex flex-column order-1">
                                     <div>
-                                        <span class="fs-2 fw-bold me-1">
+                                        <span class="fs-2 fw-semibold me-1">
                                             Boolean
                                         </span>
                                         <span class="badge rounded-pill dark-blue-pill">
@@ -230,7 +238,7 @@
 
                                 </div>
                                 <div class="col col-md-4 col-lg-3 d-flex flex-column order-2">
-                                    <div>
+                                    <div class="fw-semibold">
                                         Studenti online negli ultimi 30 minuti
                                     </div>
                                     <div class="fs-2 fw-bold">
@@ -248,35 +256,37 @@
                             <div class="row my-4 row-gap-3">
                                 <div class="col-12 col-lg-8">
                                     <div class="d-flex flex-column gap-3">
+                                       
+                                       <!-- TABELLA -->
+
                                         <div class="card">
                                             <div class="card-header">
                                                 <h4 class="fw-semibold">Prossime classi</h4>
                                             </div>
                                             <div class="card-body">
-                                                <table style="width: 100%;" class="table">
+                                                <table class="table">
                                                     <thead>
                                                         <tr>
-                                                            <th style="width: 20%;"
-                                                                class="text-secondary">
+                                                            <th colspan="4" class="w-50 text-secondary">
                                                                 Nome</th>
-                                                            <th class="text-secondary">
+                                                            <th class="text-secondary ">
                                                                 Data Inizio
                                                             </th>
                                                             <th
-                                                                class="text-secondary text-uppercase">
+                                                                class="text-secondary text-uppercase text-center">
                                                                 roi
                                                             </th>
-                                                            <th class="text-secondary">
+                                                            <th class="text-secondary ">
                                                                 Stato
                                                             </th>
-                                                            <th class="text-secondary">
+                                                            <th class="text-secondary  ">
                                                                 Azioni
                                                             </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td colspan="4" class="text-secondary">
+                                                            <td colspan="4" class="w-50 text-secondary">
                                                                 <div
                                                                     class="d-flex align-items-center">
                                                                     <img class="card-table-avatar me-2"
@@ -286,7 +296,7 @@
                                                                 </div>
                                                             </td>
                                                             <td
-                                                                class="text-secondary white-space-nowrap">
+                                                                class="text-secondary">
                                                                 15 Febbraio 2021</td>
                                                             <td class="text-secondary">
                                                                 20%</td>
@@ -311,7 +321,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="4" class="text-secondary">
+                                                            <td colspan="4" class="w-50 text-secondary">
                                                                 <div
                                                                     class="d-flex align-items-center">
                                                                     <img class="card-table-avatar me-2"
@@ -346,7 +356,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="4" class="text-secondary">
+                                                            <td colspan="4" class="w-50 text-secondary">
                                                                 <div
                                                                     class="d-flex align-items-center">
                                                                     <img class="card-table-avatar me-2"
@@ -381,7 +391,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="4" class="text-secondary">
+                                                            <td colspan="4" class="w-50 text-secondary">
                                                                 <div
                                                                     class="d-flex align-items-center">
                                                                     <img class="card-table-avatar me-2"
@@ -416,7 +426,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="4" class="text-secondary">
+                                                            <td colspan="4" class="w-50 text-secondary">
                                                                 <div
                                                                     class="d-flex align-items-center">
                                                                     <img class="card-table-avatar me-2"
@@ -451,7 +461,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="4" class="text-secondary">
+                                                            <td colspan="4" class="w-50 text-secondary">
                                                                 <div
                                                                     class="d-flex align-items-center">
                                                                     <img class="card-table-avatar me-2"
@@ -486,7 +496,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="4" class="text-secondary">
+                                                            <td colspan="4" class="w-50 text-secondary">
                                                                 <div
                                                                     class="d-flex align-items-center">
                                                                     <img class="card-table-avatar me-2"
@@ -521,7 +531,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="4" class="text-secondary">
+                                                            <td colspan="4" class="w-50 text-secondary">
                                                                 <div
                                                                     class="d-flex align-items-center">
                                                                     <img class="card-table-avatar me-2"
@@ -559,6 +569,9 @@
                                                 </table>
                                             </div>
                                         </div>
+                                        
+                                        <!-- ACCORDION -->
+                                        
                                         <div class="card">
                                             <div class="card-header">
                                                 <h4 class="text-uppercase fw-semibold">f.a.q.</h4>
@@ -569,7 +582,7 @@
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header">
                                                             <button
-                                                                class="accordion-button collapsed"
+                                                                class="accordion-button collapsed fw-semibold"
                                                                 type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#flush-collapseOne"
@@ -581,7 +594,7 @@
                                                         <div id="flush-collapseOne"
                                                             class="accordion-collapse collapse"
                                                             data-bs-parent="#faq">
-                                                            <div class="accordion-body">
+                                                            <div class="accordion-body fw-semibold">
                                                                 Clicca sul + in alto nella sezione blu.
                                                             </div>
                                                         </div>
@@ -589,7 +602,7 @@
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header">
                                                             <button
-                                                                class="accordion-button collapsed"
+                                                                class="accordion-button collapsed fw-semibold"
                                                                 type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#flush-collapseTwo"
@@ -601,7 +614,7 @@
                                                         <div id="flush-collapseTwo"
                                                             class="accordion-collapse collapse"
                                                             data-bs-parent="#faq">
-                                                            <div class="accordion-body">
+                                                            <div class="accordion-body fw-semibold">
                                                                 Clicca sull'icona della campanella.
                                                             </div>
                                                         </div>
@@ -609,7 +622,7 @@
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header">
                                                             <button
-                                                                class="accordion-button collapsed"
+                                                                class="accordion-button collapsed fw-semibold"
                                                                 type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#flush-collapseThree"
@@ -621,7 +634,7 @@
                                                         <div id="flush-collapseThree"
                                                             class="accordion-collapse collapse"
                                                             data-bs-parent="#faq">
-                                                            <div class="accordion-body">
+                                                            <div class="accordion-body fw-semibold">
                                                                 Scarica l'app dal tuo smartphone o tablet.
                                                             </div>
                                                         </div>
@@ -641,15 +654,15 @@
                                                 <ul class="list-group">
                                                     <li class="list-group-item">
                                                         <input type="checkbox" id="1">
-                                                        <label for="1">Kickoff nuove classi</label>
+                                                        <label class="fw-semibold" for="1">Kickoff nuove classi</label>
                                                     </li>
                                                     <li class="list-group-item">
                                                         <input type="checkbox" id="2">
-                                                        <label for="2">Lezione su Bootstrap 5 in classe #75</label>
+                                                        <label class="fw-semibold" for="2">Lezione su Bootstrap 5 in classe #75</label>
                                                     </li>
                                                     <li class="list-group-item">
                                                         <input type="checkbox" id="3">
-                                                        <label for="3">Controllare username github studenti</label>
+                                                        <label class="fw-semibold" for="3">Controllare username github studenti</label>
                                                     </li>
                                                   </ul>
                                                 
@@ -659,15 +672,15 @@
                                             <img src="./img/stats.jpeg" class="card-img-top" alt="">
                                             <div class="card-body">
                                               <h5 class="card-title fw-semibold">Utenti attivi</h5>
-                                              <p class="card-text fs-6">Lista degli utenti attivi in piattaforma nell'ultimo mese.</p>
+                                              <p class="card-text fs-6 fw-semibold">Lista degli utenti attivi in piattaforma nell'ultimo mese.</p>
                                             </div>
                                             <ul class="list-group list-group-flush">
-                                              <li class="list-group-item fs-6">Gennaio: 1200</li>
-                                              <li class="list-group-item fs-6">Febbraio: 800</li>
-                                              <li class="list-group-item fs-6">Marzo: 1500</li>
+                                              <li class="list-group-item fs-6 fw-semibold">Gennaio: 1200</li>
+                                              <li class="list-group-item fs-6 fw-semibold">Febbraio: 800</li>
+                                              <li class="list-group-item fs-6 fw-semibold">Marzo: 1500</li>
                                             </ul>
                                             <div class="card-footer">
-                                              <a href="#" class="card-link fs-6">Visualizza report approfondito</a>
+                                              <a href="#" class="card-link fs-6 fw-semibold">Visualizza report approfondito</a>
                                             </div>
                                           </div>
                                     </div>

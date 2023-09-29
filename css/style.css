@@ -120,9 +120,9 @@ height: calc(100vh - 70px);
     margin-bottom: auto;
 }
 
-.col-12 .debug{
-    padding: 10px;
-    border: 2px solid greenyellow;
+.navbar .navbar-icon{
+    flex-basis: 30px;
+    text-align: center;
 }
 
 /*
@@ -149,6 +149,26 @@ MAIN-APP
     font-weight: 600;
 }
 
+td:nth-child(2),
+td:nth-child(3){
+    display: none;
+}
+
+th:nth-child(2),
+th:nth-child(3){
+    display: none;
+}
+
+.table th:not(:first-child){
+    text-align: center;
+}
+
+.table td:not(:first-child){
+    text-align: center;
+}
+
+
+
 
 
 
@@ -164,7 +184,19 @@ MEDIA QUERY
 @media (min-width: 575.98px) {}
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
-@media (min-width: 767.98px) {}
+@media (min-width: 767.98px) {
+    
+    td:nth-child(2),
+td:nth-child(3){
+    display: table-cell;
+}
+
+th:nth-child(2),
+th:nth-child(3){
+    display: table-cell;
+}
+
+}
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (min-width: 991.98px) {
