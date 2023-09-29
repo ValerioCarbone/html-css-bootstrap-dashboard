@@ -121,14 +121,21 @@ height: calc(100vh - 70px);
 }
 
 .navbar .navbar-icon{
-    flex-basis: 30px;
+    width: 30px;
     text-align: center;
+}
+
+
+.navbar a:hover{
+    background-color: #9cabc0;
 }
 
 /*
 MAIN-APP 
 */
 
+
+/* HEADER */
 .app-header{
     background-color: #1B72E8;
 }
@@ -174,8 +181,6 @@ th:nth-child(3){
 
 
 
-
-
 /* 
 MEDIA QUERY 
 */
@@ -187,12 +192,12 @@ MEDIA QUERY
 @media (min-width: 767.98px) {
     
     td:nth-child(2),
-td:nth-child(3){
+    td:nth-child(3){
     display: table-cell;
 }
 
-th:nth-child(2),
-th:nth-child(3){
+    th:nth-child(2),
+    th:nth-child(3){
     display: table-cell;
 }
 
@@ -213,8 +218,3 @@ th:nth-child(3){
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1399.98px) {}
 
-
-.col .debug{
-    padding: 10px;
-    border: 2px solid yellow;
-}
