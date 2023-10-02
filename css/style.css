@@ -188,6 +188,11 @@ th:nth-child(3){
     text-align: center;
 }
 
+.photo-select input{
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
 
 
 
